@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;/*Khi chiều cao của box không đủ chứa text,
+            thì text bị tràn sẽ được dấu đi.*/
+            background-color:#333333;
+        }
+        li{
+            float:left;/*dồn tất cả thẻ li sang bên trái*/
+        }
+        li a{
+            display:block;/*Thành phần hiển thị như một khối,
+            khi sử dụng giá trị block thành phần sẽ đứng một hàng độc lập
+            so với thành phần trước và sau nó.*/
+            color:white;
+            text-align: center;
+            padding:16px;
+            text-decoration:none;/*bỏ gạch chân*/
+        }
+        li a:hover{
+            background-color:#111111;
+        }
+    </style>
+</head>
+<body>
+<!--
+<h1>danh sách không có thứ tự</h1>
+<ul style="list-style-type:disc;">none: bỏ chấm tròn, circle:tròn, square:vuông, disc: mặc định
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<h2>danh sách theo thứ tự</h2>
+<ol type="1" start="50">sắp xếp theo thứ tự I, i, A, a, 1; start: đếm số bắt đầu từ giá trị đó
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+-->
+<h3>Tạo menu ngang</h3>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#new">New</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+</body>
+</html>

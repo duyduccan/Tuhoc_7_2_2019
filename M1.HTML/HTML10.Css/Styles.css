@@ -1,0 +1,17 @@
+body{
+    background-color: powderblue;
+}
+h3{
+    color: red;/*màu chữ*/
+    font-family: Verdana;/*phông chữ*/
+    font-size: 300%;/*kích thước phông chữ*/
+    border: 1px solid white;/*viền quanh chữ*/
+    padding:30px;/*không gian giữa văn bản và viền */
+    margin:50px;/* không gian bên ngoài biên giới so với viền*/
+}
+#student{
+    color:orange;
+}
+p.students{
+    color:green;
+}
