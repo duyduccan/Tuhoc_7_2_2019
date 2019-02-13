@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Text input: đầu vào cho văn bản</h1>
+<form>
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+</form>
+
+<h2>Radio buttons: chọn 1 trong số các lựa chọn</h2>
+<form>
+    <input type="radio" name="gender" value="male" checked>Male<br>
+    <input type="radio" name="gender" value="female">Female<br>
+    <input type="radio" name="gender" value="other">Other
+</form>
+
+<h3>submit button: nút gửi</h3>
+<form action="#" method="get" targer="_blank"><!--action đổ ra 1 trang web-->
+    First name:<br>
+    <input type="text" name="firstname" value="Duc">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Can">
+    <br><br>
+    <input type="submit" value="Submit">
+
+    <h4>Grouping form data with fieldset: nhóm dữ liệu mẫu </h4>
+    <form action="#">
+        <fieldset>
+            <legend>Personal information:</legend>
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <h5> select : danh sách thả xuống chọn</h5>
+    <form action="#">
+        <select name="cars" size="2" multiple><!--size xác định giá trị nhìn thấy-->
+            <!--thuộc tính multiple cho phép chọn nhiều lựa chọn-->
+            <option value="kia">Kia morning</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda" selected>Honda</option><!--selected để lựa chọn-->
+            <option value="ferari">ferari</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <h6>textarea: nhập nhiều dòng</h6>
+    <form action="#">
+        <textarea name="message" rows="10" cols="30">My name is Duc. I live in hanoi
+        </textarea><br><!--có thể thay rows, cols bằng style="width:200px;height:600px"-->
+        <input type="submit">
+    </form>
+
+    <h1>button: nút click</h1>
+    <button type="button" onclick="alert('Hello World!')">Click me!</button>
+</form>
+</body>
+</html>
