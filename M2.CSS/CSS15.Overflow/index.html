@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        div{
+            background-color:yellow;
+            width:200px;
+            height:50px;
+            border:2px solid black;
+            overflow: visible;/*mặc định tràn k cắt bớt*/
+        }
+        div.ex1{
+            background-color:green;
+            width:200px;
+            height:50px;
+            border:2px solid black;
+            overflow:hidden;/*tràn cắt bớt*/
+        }
+        div.ex2{
+            background-color:pink;
+            width:200px;
+            height:50px;
+            border:2px solid black;
+            overflow:scroll;/*tràn bị cắt bớt hiển thị thanh cuộn*/
+            /*overflow:auto; tương tự như scroll bổ sung thêm thanh cuộn khi cần thiết*/
+        }
+        div.ex3{
+            background-color:blue;
+            width:200px;
+            height:50px;
+            border:2px solid black;
+            overflow-x:hidden;
+            overflow-y:scroll;
+        }
+    </style>
+</head>
+<body>
+<div>You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.</div>
+<br>
+<div class="ex1">You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.</div>
+<br>
+<div class="ex2">You can use the overflow property when you want to have better
+    control of the layout. The overflow property specifies what happens
+    if content overflows an element's box.</div>
+<div class="ex3">You can use the overflow property when you want to have better control
+    of the layout. The overflow property specifies what happens if content
+    overflows an element's box.</div>
+</body>
+</html>

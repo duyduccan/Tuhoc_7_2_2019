@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+    //substring(start, end)
+    /*
+    substring()cũng tương tự như slice().
+    Sự khác biệt là substring()không thể chấp nhận chỉ số tiêu cực.
+    * */
+    var str = "Apple, Banana, Kiwi";
+    var res = str.substring(7,13);
+    document.getElementById("demo").innerHTML = res;
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>phương thức replace() sử dụng thay thế một giá trị xác định với một giá trị trong một chuỗi </h1>
+<button onclick="myFunction()">bấm vào nút</button>
+<p id="demo">please visit microsoft and w3school</p>
+<script type="text/javascript">
+    function myFunction(){
+        var str = document.getElementById("demo").innerHTML;
+        var txt = str.replace(/microsoft/i,"w3school");
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Outline</title>
+    <style>
+        p{
+            outline-color:red;/*màu đường*/
+        }
+        p.dotted{outline-style:dotted}
+        p.dashed{outline-style:dashed}
+        p.solid{outline-style:solid}
+        p.double{outline-style:double}
+        p.groove{outline-style:groove}
+        p.ridge{outline-style:ridge}
+        p.inset{outline-style:inset}
+        p.outset{outline-style:outset}
+
+        p.ex1{
+            border: 1px solid black;
+            outline-style:solid;/*kiểu đường*/
+            outline-color:green;
+            outline-width:thin;/*Chiều rộng đường; thin: mỏng; medium:trung bình;thick:dày;
+            a specific size:một kích cụ thể vd 4px*/
+        }
+        p.ex2{
+            margin:30px;
+            background:yellow;
+            border:1px solid black;
+            outline: 5px solid green;
+            outline-offset:15px;/*Các outline-offset bất động sản cho biết thêm khoảng trống
+            giữa một phác thảo và cạnh / biên giới của một phần tử.
+            Khoảng cách giữa một yếu tố và phác thảo của nó là trong suốt.*/
+        }
+    </style>
+</head>
+<body>
+<!--Một phác thảo là một dòng được vẽ xung
+quanh các yếu tố, bên ngoài biên giới, để làm cho các phần tử "nổi bật".-->
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+<hr>
+<p class="ex1">Họ và tên: CanDuyDuc</p>
+<p class="ex2">Địa chỉ: Phụng thượng phúc thọ hà nội</p>
+</body>
+</html>

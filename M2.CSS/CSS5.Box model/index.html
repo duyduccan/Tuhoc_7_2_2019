@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> box model</title>
+    <style>
+        div{
+            background-color:lightblue;
+            width:300px;
+            border:25px solid green;
+            padding: 25px;
+            margin:25px;
+        }
+        #duc{
+            /*320px (chiều rộng) + 20px (trái + phải đệm) + 10px (viền trái + phải)
+            + 0px (lề trái + phải) = 350px*/
+            width:320px;
+            padding:10px;
+            border:5px solid gray;
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+<div>This text is the actual content of the box. We have added a 25px padding,
+    25px margin and a 25px green border. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div id="duc">
+    Giả sử chúng ta muốn phong cách một phần tử div để có tổng chiều rộng của 350px:
+</div>
+</body>
+</html>

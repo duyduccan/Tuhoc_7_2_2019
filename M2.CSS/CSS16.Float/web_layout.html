@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web_layout</title>
+    <style>
+
+        *{
+            box-sizing: border-box;/*các thứ nằm trong hộp*/
+        }
+        .header,.footer{
+            background-color:gray;
+            color:white;
+            padding:15px;
+        }
+        .column{
+            float:left;/*nổi lên trên 1 dòng lề bên trái*/
+            padding:15px;
+        }
+        .clearfix::after{/*phần tử giả*/
+            content:"";
+            clear: both;
+            display: table;
+        }
+        .menu{
+            width: 25%;
+        }
+        .content{
+            width:75%;
+        }
+        .menu ul{
+            list-style-type:none;/*bỏ chấm tròn*/
+            margin:0;
+            padding:0;
+        }
+        .menu li{
+            padding:8px;
+            margin-bottom:8px;
+            background-color:blue;
+            color:white;
+        }
+        .menu li:hover{
+            background-color:darkgray;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Trường đại học hà nội</h1>
+</div>
+
+<div class="clearfix">
+    <div class="column menu">
+        <ul>
+            <li>mỏ</li>
+            <li>tài chính</li>
+            <li>lâm nghiệp</li>
+            <li>thương mại</li>
+        </ul>
+    </div>
+    <div class="column content">
+        <h1>Trường đại học mỏ địa chất</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Footer text</p>
+</div>
+
+</body>
+</html>

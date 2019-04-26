@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border-collapse:collapse;/*tạo thành 1 lề duy nhất*/
+            width:100%;
+        }
+        th{
+            height:50px;
+            text-align:left;/*căn trái phải giữa (liên kết ngang từ trai sang phải)*/
+            background-color:green;
+            color:white;
+        }
+        td{
+            height:50px;
+            vertical-align:bottom;/*căn dưới giữa trên(liên kết dọc từ trên xuống dưới)*/
+        }
+        td,th{
+            padding:15px;
+            text-align:left;
+            border-bottom:1px solid #ddd;
+        }
+        tr:hover{background-color:pink}/*hơ chuột đổi màu*/
+        tr:nth-child(even){background-color:#f2f2f2;}/*hiển thị màu ngựa vằn*/
+    </style>
+</head>
+<body>
+<!--<div style="overflow-x:auto;>-->
+    <table>
+        <tr>
+            <th>Môn học</th>
+            <th>Giáo viên</th>
+        </tr>
+        <tr>
+            <td>Toán cao cấp</td>
+            <td>Cù trọng xoay</td>
+        </tr>
+        <tr>
+            <td>Văn học</td>
+            <td>Huy Cận</td>
+        </tr>
+        <tr>
+            <td>Âm Nhac</td>
+            <td>Hoàng Sa</td>
+        </tr>
+    </table>
+</body>
+</html>

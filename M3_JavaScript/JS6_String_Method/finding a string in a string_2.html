@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tìm một string trong 1 string</h1>
+<p>Các lastIndexOf()phương thức trả về chỉ số của cuối cùng xảy
+    ra một văn bản quy định tại một chuỗi:</p>
+<p id="demo"></p>
+<script>
+    /*
+    * Javascript đếm vị trí từ số không.
+0 là vị trí đầu tiên trong một chuỗi, 1 là lần thứ hai, 2 là thứ ba ...*/
+    var str = "Please locate where 'locate' occurs!";
+    var pos = str.lastIndexOf("locate");
+    document.getElementById("demo").innerHTML = pos;
+</script>
+</body>
+</html>

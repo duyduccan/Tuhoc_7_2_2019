@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Biến khai báo trong một hàm JavaScript, trở thành ĐỊA PHƯƠNG đến chức năng.</p>
+<p>biến cục bộ chỉ có thể được truy cập từ bên trong hàm.</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    myFunction();
+    function myFunction(){
+        var carName = "Volvo";//khai báo 1 biến cục bộ
+        document.getElementById("demo1").innerHTML =
+            typeof carName + " " + carName;
+    }
+    document.getElementById("demo2").innerHTML =
+        typeof carName;
+</script>
+</body>
+</html>

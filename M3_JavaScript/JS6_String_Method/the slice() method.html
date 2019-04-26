@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+    //slice(start, end)
+    /*
+    slice() trích ra một phần của một chuỗi và trả về phần chiết xuất trong một chuỗi mới.
+    Phương pháp này có 2 thông số: vị trí bắt đầu và vị trí cuối (end không bao gồm).
+    Ví dụ này lát ra một phần của một chuỗi từ vị trí 7 đến vị trí 12 (13-1):
+    * */
+    var str = "Apple, Banana, Kiwi";
+    var res = str.slice(7,13);
+    document.getElementById("demo").innerHTML = res;
+</script>
+</body>
+</html>

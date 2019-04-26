@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>padding</title>
+    <style>
+        div{
+            border: 1px solid black;
+            background-color:lightblue;
+            padding-top: 50px;
+            padding-right:30px;
+            padding-bottom:50px;
+            padding-left:80px;
+        }
+        p{
+            border:1px solid black;
+            background-color:lightblue;
+            padding:25px 50px 75px 100px;
+        }
+        div.ex2 {
+            width: 300px;
+            padding: 25px;
+            box-sizing: border-box;/*bạn có thể sử dụng box-sizingbất động sản.
+            Điều này làm cho các yếu tố để duy trì chiều rộng của nó; nếu bạn tăng đệm,
+             không gian nội dung có sẵn sẽ giảm*/
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<!--CSS padding thuộc tính được sử dụng để tạo ra không gian xung quanh
+nội dung của một nguyên tố, bên trong bất kỳ biên giới xác định.-->
+<div>Địa chỉ: Phụng thượng phúc thọ hà nội</div>
+<hr>
+<p>Nơi ở hiện tại: Cổ nhuế từ liêm hà nội</p>
+<div class="ex2">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
+</div>
+</body>
+</html>

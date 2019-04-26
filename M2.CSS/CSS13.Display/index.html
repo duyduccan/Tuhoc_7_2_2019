@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị</title>
+    <style>
+        li{
+            display:inline;/*hiển thị li trên 1 dòng*/
+        }
+        span{
+            display:block;/*cách các phần tử được thực hiện xuống dòng hết*/
+        }
+        h1.hidden{
+            /*display:none; ẩn thẻ không hiển thị ra màn hình */
+            visibility: hidden;/*ẩn thẻ nhưng ảnh hưởng đến bố cục*/
+        }
+    </style>
+</head>
+<body>
+<h1 class="hidden">This is a hidden heading</h1>
+<ul>
+    <li><a href="#">javascrip</a></li>
+    <li><a href="#">html</a></li>
+    <li><a href="#">css</a></li>
+
+</ul>
+<span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+</body>
+</html>

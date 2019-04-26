@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Sử dụng ví dụ trên, toCelsiusđề cập đến đối tượng chức năng, và toCelsius()đề
+    cập đến kết quả hoạt động.</p>
+<p>Truy cập vào một chức năng mà không có () sẽ trả lại định nghĩa hàm thay vì
+    kết quả chức năng:</p>
+<p id="demo"></p>
+<script>
+    function toCelsius(f){
+        return (5/9)*(f-32);
+    }
+    document.getElementById("demo").innerHTML = toCelsius;
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+    /*
+    * Một hàm JavaScript được định nghĩa với các functiontừ khóa, theo sau là một tên ,
+    * tiếp theo là dấu ngoặc đơn () .
+tên hàm có thể chứa các chữ cái, chữ số, dấu gạch dưới và dấu hiệu đô la
+ (tương tự quy tắc như biến).
+Các dấu ngoặc đơn có thể bao gồm tên tham số cách nhau bởi dấu phẩy:
+( argument1, argument2, ... )
+Mã này được thực thi, bởi chức năng, được đặt bên trong dấu ngoặc nhọn: {}
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+    * */
+    var x = myFunction(4,3);
+    document.getElementById("demo").innerHTML = "Kết quả = " + x;
+
+    function myFunction(a,b){
+        return a * b;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bạn có thể sử dụng dấu ngoặc kép bên trong một chuỗi, miễn là họ không phù hợp với dấu ngoặc kép quanh chuỗi:</p>
+<p id="demo"></p>
+<script>
+    var answer1 = "It's alright";
+    var answer2 = "He is called 'Johnny'";
+    var answer3 = 'He is called "Johnny"';
+    document.getElementById("demo").innerHTML =
+    answer1 + "<br>" + answer2 + "<br>" + answer3;
+</script>
+</body>
+</html>

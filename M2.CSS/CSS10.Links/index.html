@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>links</title>
+    <style>
+        /* unvisited link : nhấn chuột vào có màu đỏ*/
+        a:link {
+            color: red;
+            text-decoration:none;/*bỏ gạch chân*/
+            background-color: yellow;/*màu nền cho các liên kết*/
+        }
+
+        /* visited link: liên kết người dùng đã ghé thăm */
+        a:visited {
+            color: green;
+            text-decoration:none;/*bỏ gạch chân*/
+        }
+
+        /* mouse over link: hơ chuột vào có màu hồng */
+        a:hover {
+            color: hotpink;
+            text-decoration:underline;/*bỏ gạch chân*/
+        }
+
+        /* selected link : một liên kết thời điểm đó được nhấp*/
+        a:active {
+            color: blue;
+            text-decoration:underline;/*bỏ gạch chân*/
+        }
+    </style>
+</head>
+<body>
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+</body>
+</html>

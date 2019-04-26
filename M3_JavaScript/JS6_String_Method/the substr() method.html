@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+    //substr(start, length)
+    /*
+    substr()cũng tương tự như slice().
+    Sự khác biệt là tham số thứ hai xác định chiều dài của phần chiết xuất.
+    * */
+    var str = "Apple, Banana, Kiwi";
+    var res = str.substr(7,6);
+    document.getElementById("demo").innerHTML = res;
+</script>
+</body>
+</html>

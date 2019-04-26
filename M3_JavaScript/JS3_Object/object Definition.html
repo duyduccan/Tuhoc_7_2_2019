@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bạn định nghĩa (và tạo) một đối tượng JavaScript với một đối tượng theo nghĩa đen:</p>
+<p id="demo"></p>
+<script>
+    // tạo mới một đối tượng
+    var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+    //hiển thị một số dự liệu từ đối tượng
+    document.getElementById("demo").innerHTML =
+        person.firstName + " is " + person.age + " year old.";
+    /*Các name:value trong đối tượng JavaScript được gọi là thuộc tính
+    */
+</script>
+<!--Không gian và ngắt dòng là không quan trọng.
+Một định nghĩa đối tượng có thể span nhiều dòng:
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+-->
+</body>
+</html>

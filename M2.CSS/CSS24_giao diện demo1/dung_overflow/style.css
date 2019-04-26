@@ -1,0 +1,33 @@
+#container{
+    width: 1000px; /*rộng 1000px*/
+    margin: 0px auto; /*canh giữa màn hình*/
+    text-align: center;/*text bên trong canh giữa*/
+    font-size: 30px; /*font chữ 30px*/
+    color: #ffffff;/*font màu trắng*/
+}
+
+#header{
+    height: 100px;/*cao 100px*/
+    background: blue; /*nền màu xanh*/
+}
+
+#main{
+    overflow: hidden;
+}
+.content{
+    float: left;/*nằm bên trái*/
+    width: 700px;/*rộng 700px*/
+    height: 300px;/*cao 300px*/
+    background: red;/*nền đỏ*/
+}
+.sidebar{
+    width: 300px;/*rộng 300px*/
+    float: right; /*nằm bên phải*/
+    height: 300px; /*cao 300px*/
+    background: pink;/*nền màu hồng*/
+}
+
+#footer{
+    background: gray; /*nền màu xám*/
+    height: 100px;/*cao 100px*/
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> switch được sử dụng để chọn một trong nhiều khối mã được thực thi</h1>
+<p id="demo"></p>
+
+<script type="text/javascript">
+    var text;
+    switch(new Date().getDay()){
+        case 0:
+            text ="sunday";
+            break;
+        case 6:
+            text = "Saturday";
+            break;
+        default:
+            text = "Looking forward to the weekend";
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>

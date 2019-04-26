@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> phương thức push() trả về độ dài mảng mới </h1>
+<button onclick="myFunction()">Thêm phần tử đếm độ dài mảng mới </button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+    var fruits = ["banana","orange","apple","mango"];
+    document.getElementById("demo").innerHTML = fruits;
+
+    function myFunction(){
+        document.getElementById("demo1").innerHTML = fruits.push("Kiwi");
+        document.getElementById("demo").innerHTML = fruits;
+
+    }
+</script>
+</body>
+</html>

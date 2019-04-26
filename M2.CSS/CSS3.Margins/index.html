@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            border: 1px solid black;
+            margin-top:100px;
+            margin-bottom:100px;
+            margin-right:150px;
+            margin-left:80px;
+            background-color:lightblue;
+        }
+        p.ex1{
+            margin-left:inherit;/*kế thừa từ div*/
+        }
+        p{
+            border:1px solid black;
+            margin: 25px 50px 75px 100px;/*rút ngắn mã code*/
+            background-color:lightblue;
+        }
+        #container{
+            width:300px;
+            margin:auto;/*căn giữa 2 lề left và right*/
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<!--margin: khoảng các của bên ngoài biên giới-->
+<h1>Họ và tên:</h1>
+<div>
+    <p class="ex1">Can Duy Duc</p>
+</div>
+<hr>
+<p>Mssv:1521050065</p>
+<hr>
+<p id="container">Địa chỉ: Phụng Thượng phúc thọ hà nội</p>
+<!--vd: <h1> phần tử có một lề dưới của 50px và <h2> phần tử có một lề trên thiết lập để 20px.
+cảm giác chung dường như cho thấy rằng bên lề dọc giữa <h1> và <h2> sẽ là một tổng của 70px
+(50px + 20px). Nhưng do sự sụp đổ lề, lề thực tế kết thúc lên được 50px. -->
+</body>
+</html>

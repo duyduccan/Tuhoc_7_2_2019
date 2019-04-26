@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    /*
+    Đối tượng cũng có thể có phương thức .
+Phương thức là hành động có thể được thực hiện trên đối tượng.
+Phương thức được lưu trữ trong các thuộc tính như các định nghĩa hàm .
+    * */
+    var person = {
+        firstName: "Duc",
+        lastName: "Can",
+        id : 5566,
+        fullName: function () {
+            return this.firstName + " " + this.lastName;
+        }
+        /*
+        * Trong định nghĩa hàm, this đề cập đến "chủ sở hữu" của hàm.
+    Trong ví dụ trên, this là đối tượng người rằng "sở hữu" các fullName chức năng.
+    Nói cách khác, this.firstName có nghĩa là firstName tài sản của đối tượng này .*/
+    };
+    /*
+    * Bạn truy cập vào một phương thức đối tượng với cú pháp sau:
+    objectName.methodName()*/
+    document.getElementById("demo").innerHTML = person.fullName();
+    /*
+    * Nếu bạn truy cập một phương pháp mà không cần các dấu ngoặc đơn ()
+    * , nó sẽ trở lại với định nghĩa hàm :*/
+</script>
+</body>
+</html>
