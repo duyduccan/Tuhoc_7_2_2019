@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{
+            padding: 20px;
+            background: orange;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>sự kiện hover là sự kiện kết hợp của mouseenter và mouseleave</h1>
+<div class="container">
+    Làm giáo viên chưa bao giờ là một nghề nghiệp đơn giản.
+    Bên cạnh việc phải có kiến thức chuyên môn vững chắc để truyền đạt và dạy dỗ
+    học sinh thì họ còn phải sở hữu tính kiên nhẫn vô hạn mới có thể đối phó được
+    với đủ trò thiên biến vạn hoá của lũ nhất quỷ nhì ma. Trong số đó phải kể đến
+    công tác chấm bài thi tốn không ít công sức và năng lượng, đặc biệt là khi gặp
+    phải những bài làm sai "bung bét" đủ kiểu của học trò.
+</div>
+
+<div class="container">
+    Làm giáo viên chưa bao giờ là một nghề nghiệp đơn giản.
+    Bên cạnh việc phải có kiến thức chuyên môn vững chắc để truyền đạt và dạy dỗ
+    học sinh thì họ còn phải sở hữu tính kiên nhẫn vô hạn mới có thể đối phó được
+    với đủ trò thiên biến vạn hoá của lũ nhất quỷ nhì ma. Trong số đó phải kể đến
+    công tác chấm bài thi tốn không ít công sức và năng lượng, đặc biệt là khi gặp
+    phải những bài làm sai "bung bét" đủ kiểu của học trò.
+</div>
+
+<div class="container">
+    Làm giáo viên chưa bao giờ là một nghề nghiệp đơn giản.
+    Bên cạnh việc phải có kiến thức chuyên môn vững chắc để truyền đạt và dạy dỗ
+    học sinh thì họ còn phải sở hữu tính kiên nhẫn vô hạn mới có thể đối phó được
+    với đủ trò thiên biến vạn hoá của lũ nhất quỷ nhì ma. Trong số đó phải kể đến
+    công tác chấm bài thi tốn không ít công sức và năng lượng, đặc biệt là khi gặp
+    phải những bài làm sai "bung bét" đủ kiểu của học trò.
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+       /* $('.container').mouseenter(function(){
+            /!*
+            * $(this) là 1 selector và nó trừu tượng
+            * trong mỗi hoàn cảnh khác nhau thì nó tương ứng với 1 selector khác nhau
+            * $(this) là 1 selector cụ thể và duy nhất
+            * $(this) chính là một đối tượng cụ thể của $('.container') nhưng mà nó chỉ
+            * chọn đến đúng các selector $('.container')đang bị tác động di chuột vào mà
+            * không chọn đến các $('.container') khác *!/
+           // $('.container').css('background','red');
+            $(this).css('background','red');
+        });
+
+        $('.container').mouseleave(function(){
+           // $('.container').css('background','orange');
+           $(this).css('background','orange');
+        });*/
+        // hover
+        $('.container').hover(function(){
+            /*
+            * $(this) là 1 selector và nó trừu tượng
+            * trong mỗi hoàn cảnh khác nhau thì nó tương ứng với 1 selector khác nhau
+            * $(this) là 1 selector cụ thể và duy nhất
+            * $(this) chính là một đối tượng cụ thể của $('.container') nhưng mà nó chỉ
+            * chọn đến đúng các selector $('.container')đang bị tác động di chuột vào mà
+            * không chọn đến các $('.container') khác */
+            // $('.container').css('background','red');
+            $(this).css('background','red');
+        },function(){
+            // $('.container').css('background','orange');
+            $(this).css('background','orange');
+        });
+    });
+</script>
+</body>
+</html>

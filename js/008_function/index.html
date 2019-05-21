@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>function js là 1 khối {} được khai báo để thực hiện một nhiệm vụ cụ thể</h1>
+<p>ví dụ hàm tính chu vi hình tròn</p>
+<p>hàm tính chu vi hình vuông, hình chữ nhật</p>
+<p>chuyển đổi độ c thành độ f</p>
+<p>tính điểm trung bình của học sinh sau đó xếp loại học sinh đó </p>
+<script type="text/javascript">
+    //r là tham số của hàm chỉ có gia trị trong hàm
+    // r là tham số và luôn đi kèm với khai báo hàm
+    function chuvihinhtron(r){
+        // code thực thi của function
+        var chuvi = r * 2 * 3.14;
+        //return trả về giá trị của biến chuvi và sẽ kết thúc hàm
+        return chuvi;
+        // tất cả các lệnh sau return trong function thì đều không chạy
+    }
+    // gọi hàm bằng cách gọi tên hàm
+    // gọi hàm bản chất là truyền giá trị từ biến hoặc là giá trị cho tham số của hàm
+    var c = chuvihinhtron(5);
+    alert("chu vi hình tròn có bán kính là 5cm là: " + c);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="height: 1500px">
+<h1>sự kiện scroll</h1>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        // mỗi lần di chuyên thanh scroll thì sẽ thêm thẻ html<p>
+        $(window).scroll(function(){
+            $('body').append('<p>thẻ p append</p>');
+        });
+    });
+</script>
+</body>
+</html>

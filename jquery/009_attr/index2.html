@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>attr() method jquery được sử dụng để lấy ra hoặc đặt giá trị cho các thuộc tính trong selector
+của jquery</h1>
+<div style="padding:20px;margin:20px ">
+   <img id="source" src="https://cdn.24h.com.vn/upload/1-2019/images/2019-02-12/1549963565-948-ngam-huyen-thoai-honda-dream-do-dep-me-ly-tren-xu-chua-vang-dream9-1549894488-width660height440.jpg">
+</div>
+
+<div style="margin:20px; padding: 20px">
+    <button id="control" type="button">Copy attribute</button>
+</div>
+<div style="padding:20px;margin:20px ">
+    <img id="target" src="" alt="ảnh copy">
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#control').on('click',function(){
+           var src = $('img#source').attr('src');
+           $('img#target').attr('src',src);
+        });
+    });
+</script>
+</body>
+</html>

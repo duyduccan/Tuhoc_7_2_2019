@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Phương thức val()</h1>
+<form name="register" action="" method="post">
+    <div type="margin: 20px padding: 10px">
+        <lable>username</lable>
+        <input type="text" name="username" value="" placeholder="nhập họ và tên">
+    </div>
+
+    <button id="control" style="margin: 30px" type="button">copy nội dung trong input</button>
+
+    <div type="margin: 20px padding: 10px">
+        <lable>usernamecopy</lable>
+        <input type="text" name="usernamecopy" value="" placeholder="nhập họ và tên">
+    </div>
+
+</form>
+
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        /*
+        * val() không truyền tham số vào thì dùng để lấy nội dung trong ô input
+        * val(value) đặt value vào trong input selector*/
+        $('#control').on('click',function(){
+            var username = $('input[name="username"]').val();
+            $('input[name="usernamecopy"]').val(username);
+        });
+    });
+</script>
+</body>
+</html>

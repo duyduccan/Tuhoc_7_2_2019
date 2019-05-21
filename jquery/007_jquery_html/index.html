@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Phương thức html()</h1>
+<div class="containerA" style="background:green;color:orange;padding:20px">
+    <div class="row">
+        <div class="col1">
+            Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+            Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in,
+        </div>
+        <div class="col2">
+            Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+            Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in,
+        </div>
+    </div>
+</div>
+
+<button id="control" style="margin: 30px">chuyển html</button>
+
+<div class="containerB" style="background:green; color:orange; padding: 20px">
+
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        /*
+        * .html() dùng để lấy ra html trong 1 selector
+        * .html(value) dùng để đặt đoạn mã html value vào trong 1 selector
+        * text() chỉ can thiệp văn bản còn html() thì can thiệp được cả text và html*/
+        $('#control').on('click',function(){
+            var ahtml = $('.containerA').html();
+            $('.containerB').html(ahtml);
+        });
+    });
+</script>
+</body>
+</html>

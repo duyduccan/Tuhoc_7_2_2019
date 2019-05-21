@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    Làm giáo viên chưa bao giờ là một nghề nghiệp đơn giản.
+    Bên cạnh việc phải có kiến thức chuyên môn vững chắc để truyền đạt và dạy dỗ
+    học sinh thì họ còn phải sở hữu tính kiên nhẫn vô hạn mới có thể đối phó được
+    với đủ trò thiên biến vạn hoá của lũ nhất quỷ nhì ma. Trong số đó phải kể đến
+    công tác chấm bài thi tốn không ít công sức và năng lượng, đặc biệt là khi gặp
+    phải những bài làm sai "bung bét" đủ kiểu của học trò.
+</div>
+
+<div>
+    <button id="control">Đổi màu</button>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#control').click(function(){
+            $('#container').css('background','red');
+            $('#container').css('color','white');
+        });
+    });
+</script>
+</body>
+</html>

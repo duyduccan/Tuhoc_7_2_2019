@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container" style="background:orange;color: white">
+    Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur
+    sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non
+    nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac
+    diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id
+    imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Quisque
+    velit nisi, pretium ut lacinia in, elementum id enim.
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.container').on({
+            click: function(){
+                $(this).css('background','red');
+            },
+            dblclick: function(){
+                $(this).css('background','pink');
+            },
+            mouseenter: function(){
+                $(this).css('background','yellow');
+            },
+            mouseleave: function(){
+                $(this).css('background','orange');
+            }
+        });
+    });
+</script>
+</body>
+</html>

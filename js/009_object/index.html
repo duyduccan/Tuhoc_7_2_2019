@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+    * khai báo một đối tượng object trong js = {}
+    * trong một đối tượng gồm nhiều thuộc tính  property
+    * mỗi thuộc tính thì sẽ có tên thuộc tính
+    * khai báo tên thuộc tính(viết liền, không sử dụng kí tự đặc biệt, không sử dụng dấu cách
+    * và không cần đặt trong nháy '' hoặc "")
+    *
+    * giá trị của thuộc tính nếu là chuỗi thì đặt trong '' hoặc ""
+    * nếu giá trị là số thì không cần '', ""
+    *
+    * phân tách tên thuộc tính và giá trị của thuộc tính bằng dấu :
+    *
+    * cặp các thuộc_tính: giá_trị được phân tách bởi dấu ,
+    * */
+
+    var car = {name:'toyota', model:'vios', price:590000000};
+    // cách 1: truy xuất các thuộc tính của một đối tượng object tên_object.tên_thuộc_tính
+    console.log('tên của ô tô: ' + car.name);
+    console.log('model của ô tô: ' + car.model);
+    console.log('giá của ô tô: ' + car.price);
+    // cách 2 để truy xuất được vào thuộc tính của object
+    console.log('tên của ô tô: ' + car['name']);
+    console.log('model của ô tô: ' + car['model']);
+    console.log('giá của ô tô: ' + car['price']);
+
+    console.log(car);
+</script>
+</body>
+</html>

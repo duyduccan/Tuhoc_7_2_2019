@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>jquery document ready</h1>
+<p>các đoạn code jquery đều đặt trong document ready để đảm bảo trang web đã được tải
+thành công trước khi chạy các đoạn mã js va jquery ở trong callback
+(function không có tên được gọi sau khi 1 điều gì đó xảy ra)</p>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    /*Hàm trong js không có tên function(){}
+    * function không có tên này được truyền vào phương thức ready của document
+    * với vai trò là một callback
+    * callback có nghĩa là khi mà cái document (chính là toàn trang html
+    * bao gồm code html css img )
+    * ready có nghĩa là trang web được tải xong
+    * document được tải xong hoàn toàn thì cái callback chính là hàm không có tên sẽ được chạy
+    * $ là bộ chọn trong jquery(selector)
+    * selector của jquery rất giống css selector mà các bạn đã dùng*/
+    $(document).ready(function(){
+        // callback nó sẽ được chạy
+        alert('trang web được load thành công');
+        // tất cả các đoạn mà js jquery  sẽ được đặt trong document.ready
+    });
+</script>
+</body>
+</html>

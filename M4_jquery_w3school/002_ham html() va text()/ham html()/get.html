@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+    <p>Chào mừng bạn đến với jquery</p>
+</div>
+<script type="text/javascript">
+    /**
+     * Để lấy giá trị nội dung HTML của thành phần được chọn các bạn sử dụng cú pháp sau.
+     Cú Pháp:
+     $('selector').html();
+     Trong đó: selector là đối tượng chúng ta cần chọn.
+     */
+    $(document).ready(function(){
+        var html = $('div').html();
+        alert(html);
+    });
+</script>
+
+</body>
+</html>

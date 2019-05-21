@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"></script>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+        button{
+            position: absolute;
+            left: 150px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+<p class="animation">Thẻ p animation</p>
+<p>Thẻ p</p>
+<p>Thẻ p</p>
+<p class="animation">Thẻ p animation</p>
+<button onclick="getanime()">Click</button>
+
+<script type="text/javascript">
+    //các thành phần đang chuyển động
+    //$('selector:animated');
+$(document).ready(function(){
+    function anime(){
+        $('.animation').slideToggle(1000,anime);
+    }
+    anime();
+});
+// chọn các thẻ div đang chuyển động
+    function getanime(){
+        $('p:animated').css('color','yellow');
+    }
+</script>
+</body>
+</html>
